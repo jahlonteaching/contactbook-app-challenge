@@ -1,1 +1,2 @@
-# TODO: Add code here
+class ContactBook:
+    pass
