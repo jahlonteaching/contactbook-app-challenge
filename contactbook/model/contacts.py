@@ -1,5 +1,3 @@
 class Contact:
-    pass
-
-class ContactBook:
+    # Esta es la clase contact
     pass
