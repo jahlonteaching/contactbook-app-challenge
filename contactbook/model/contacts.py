@@ -1,4 +1,4 @@
-
+from datetime import datetime
 
 class Contact:
     def __init__(self, name: str, phone: str, email: str,):
@@ -6,7 +6,7 @@ class Contact:
         self.phone = phone
         self.email = email
         self.tags: list[str] = []
-        self.date: datetime = datetime.now()
+        self.creation_date: datetime = datetime.now()
 
 
     def add_tag(self, tag:str):
@@ -15,4 +15,8 @@ class Contact:
         self.tags.append(tag)
 
     def __str__(self) -> str:
-        return f"Name: {self.name}\n,Phone: {self.phone}\n,Email: {self.email}\n,Tags: {self.tags}\n,Created on: {self.creation_date}"
+        return (f"Name: {self.name}\n,"
+                f"Phone: {self.phone}\n,"
+                f"Email: {self.email}\n,"
+                f"Tags: {self.tags}\n,"
+                f"Created on: {self.creation_date}")
